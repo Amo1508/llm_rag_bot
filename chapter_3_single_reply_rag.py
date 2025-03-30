@@ -36,7 +36,7 @@ def retrieve_similar_texts(query, k=3):
     query_vector_np = np.array(query_vector, dtype=np.float32)
 
     # 讀取 FAISS 索引
-    faiss_index = faiss.read_index(BaseSettings.vector_index_path)
+    faiss_index = faiss.read_index(BaseSettings.vector_index_single_path + "/" + BaseSettings.vector_index_single_file)
     
     # 檢索最相似的 k 筆文本
     distances, indices = faiss_index.search(query_vector_np, k)

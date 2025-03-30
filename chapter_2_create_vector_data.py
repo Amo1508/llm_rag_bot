@@ -82,7 +82,7 @@ def run_process():
     faiss_index = create_faiss_index(data)
 
     # Step 3: 儲存索引
-    save_faiss_index(faiss_index, BaseSettings.vector_index_path)
+    save_faiss_index(faiss_index, BaseSettings.vector_index_single_path + "/" + BaseSettings.vector_index_single_file)
 
 if __name__ == "__main__":
     run_process()

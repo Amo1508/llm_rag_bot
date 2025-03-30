@@ -15,7 +15,11 @@ class BaseSettings:
     need_to_parse_file_path = f"data/raw_data/temple_doc.pdf"
     # 輸出資料夾路徑
     output_file_path = f"data/processed_data/temple_doc.json"
-    # 向量索引路徑
-    vector_index_path = f"data/processed_data/temple_doc.faiss"
     # 向量轉化模型
     vector_model = "intfloat/multilingual-e5-large"
+    # 向量索引路徑_單向
+    vector_index_single_path = f"data/processed_data/"
+    # 向量索引文件_單向
+    vector_index_single_file = "temple_doc.faiss"
+    # 向量索引路徑_雙向
+    vector_index_path = f"data/processed_data"
