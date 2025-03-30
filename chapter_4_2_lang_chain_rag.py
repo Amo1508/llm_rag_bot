@@ -5,8 +5,6 @@ from langchain_community.llms import Ollama
 from langchain.memory import ConversationBufferMemory
 from langchain.chains import ConversationalRetrievalChain
 from configs.settings import BaseSettings, OllamaSettings
-from langchain.schema import BaseRetriever, Document
-from typing import List
 from langchain.prompts import PromptTemplate
 
 # 初始化嵌入模型

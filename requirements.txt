@@ -1,0 +1,9 @@
+langchain==0.3.21
+langchain-community==0.3.20
+langchain-huggingface==0.1.2
+pypdf==5.4.0
+faiss-cpu==1.10.0
+numpy==1.26.4
+sentence-transformers==4.0.1
+ollama==0.4.7
+huggingface-hub==0.29.2
