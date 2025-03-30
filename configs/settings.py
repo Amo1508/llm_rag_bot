@@ -12,6 +12,10 @@ class BaseSettings:
     基礎設定
     """
     # 需解析的資料夾路徑
-    need_to_parse_file_path = "data/raw_data/開發規範.pdf"
+    need_to_parse_file_path = f"data/raw_data/temple_doc.pdf"
     # 輸出資料夾路徑
-    output_file_path = "data/processed_data/開發規範.json"
+    output_file_path = f"data/processed_data/temple_doc.json"
+    # 向量索引路徑
+    vector_index_path = f"data/processed_data/temple_doc.faiss"
+    # 向量轉化模型
+    vector_model = "intfloat/multilingual-e5-large"
